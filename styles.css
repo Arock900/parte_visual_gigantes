@@ -6,7 +6,7 @@ body, html {
 }
 
 .fondo {
-    background-image: url('images/logo.png');
+    background-image: url('static/images/logo.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
