@@ -4,37 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gigantes del Gol</title>
-  <link rel="stylesheet" href="estilos.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #111, #333);
+      color: white;
+    }
+
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00ff99;
+    }
+
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 10px;
+      background-color: #00ff99;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .boton:hover {
+      background-color: #00cc77;
+    }
+
+    section {
+      padding: 30px;
+      border-top: 2px solid #555;
+    }
+
+    h2 {
+      color: #00ff99;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .mapa, .contacto {
+      word-break: break-word;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="contenedor">
-    <div class="contenido">
+  <header>
+    <h1>Gigantes del Gol</h1>
+  </header>
 
-      <h1>Gigantes del Gol ⚽</h1>
-      <p class="descripcion">
-        Vive la mejor experiencia de fútbol 5 en canchas iluminadas, con césped sintético de calidad y atención personalizada. <br>
-        ¡Ven y juega como un verdadero gigante!
-      </p>
-
-      <h2>📸 Fotos</h2>
-      <img src="https://cdn.pixabay.com/photo/2017/08/07/17/13/soccer-2606936_1280.jpg" alt="Cancha iluminada" class="imagen-principal">
-
-      <h2>📍 Dónde estamos</h2>
-      <p>
-        Nos encontramos en Bogotá: <br>
-        <a href="https://www.google.com/maps/place/4%C2%B041'51.8%22N+74%C2%B011'57.2%22W" target="_blank">
-          Ver en Google Maps
-        </a>
-      </p>
-
-      <h2>📞 Contáctenos</h2>
-      <p>Email: <a href="mailto:contacto@gigantesdelgol.com">contacto@gigantesdelgol.com</a></p>
-      <p>Teléfono: <a href="tel:+573001234567">+57 300 123 4567</a></p>
-
-    </div>
+  <div class="container">
+    <a href="#" class="boton">Reservar Cancha</a>
+    <a href="#" class="boton">Ver Disponibilidad</a>
+    <a href="#" class="boton">Promociones</a>
   </div>
+
+  <!-- Sección: Fotos -->
+  <section>
+    <h2>Fotos</h2>
+    <img src="https://arock900.github.io/parte_visual_gigantes/img/cancha.png" alt="Cancha iluminada">
+    <p>Cancha iluminada</p>
+  </section>
+
+  <!-- Sección: Dónde estamos -->
+  <section class="mapa">
+    <h2>Dónde estamos</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.885303136914!2d-74.199218!3d4.864389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7f76e90901%3A0x123456789abcdef!2sCancha%20Gigantes%20del%20Gol!5e0!3m2!1ses!2sco!4v1690000000000"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Sección: Contáctenos -->
+  <section class="contacto">
+    <h2>Contáctenos</h2>
+    <p>Email: <a href="mailto:contacto@gigantesdelgol.com" style="color: #00ff99;">contacto@gigantesdelgol.com</a></p>
+    <p>Teléfono: <a href="tel:+573001234567" style="color: #00ff99;">+57 300 123 4567</a></p>
+  </section>
 
 </body>
 </html>
