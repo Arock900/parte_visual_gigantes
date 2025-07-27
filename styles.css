@@ -74,3 +74,72 @@ footer {
     font-size: 0.9em;
 }
 
+/* Estilos del navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #ffd700;
+}
+
+/* Espacio superior para que el fondo no tape el contenido */
+body {
+    padding-top: 60px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.fondo {
+    background-image: url('logo.png'); /* Ajusta si está en otra carpeta */
+    background-size: cover;  /* Hace que cubra toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white; /* Opcional: para que el texto contraste */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .boton {
+        width: 100%;
+    }
+}
+
