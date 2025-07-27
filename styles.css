@@ -1,145 +1,69 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100%;
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: url('logo.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }
 
-.fondo {
-    background-image: url('logo.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contenedor {
+  background-color: rgba(0, 0, 0, 0.7); /* oscurece fondo para mejor lectura */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
 }
 
 .contenido {
-    padding-top: 100px;
+  max-width: 800px;
+  width: 100%;
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px #000;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-p {
-    font-size: 1.3em;
-    margin-bottom: 40px;
-    text-shadow: 1px 1px 3px #000;
+.descripcion {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-.botones {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+h2 {
+  margin-top: 2rem;
+  color: #ffd700;
 }
 
-.boton {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    width: 200px;
-    transition: transform 0.3s ease;
+.imagen-principal {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
-.boton img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
+a {
+  color: #00ffff;
+  text-decoration: none;
 }
 
-.boton span {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
+a:hover {
+  text-decoration: underline;
 }
 
-.boton:hover {
-    transform: scale(1.05);
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px 0;
-    font-size: 0.9em;
-}
-
-/* Estilos del navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.navbar ul li a:hover {
-    color: #ffd700;
-}
-
-/* Espacio superior para que el fondo no tape el contenido */
-body {
-    padding-top: 60px;
-}
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-.fondo {
-    background-image: url('logo.png'); /* Ajusta si está en otra carpeta */
-    background-size: cover;  /* Hace que cubra toda la pantalla */
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    color: white; /* Opcional: para que el texto contraste */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* Responsive */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 2em;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    p {
-        font-size: 1em;
-    }
+  .descripcion {
+    font-size: 1rem;
+  }
 
-    .boton {
-        width: 100%;
-    }
+  h2 {
+    font-size: 1.3rem;
+  }
 }
-
